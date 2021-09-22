@@ -1,9 +1,9 @@
 <?php
 
-// SDK do Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Adicione as credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+require __DIR__  . '/vendor/autoload.php';
+
+//REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel/credentials
+MercadoPago\SDK::setAccessToken("TEST-3107f7c6-271a-4fea-b8bd-f227dc7bfd9b");
 
 $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
@@ -16,16 +16,16 @@ switch($path){
         $json = file_get_contents("php://input");
         $data = json_decode($json);
 
-        // Cria um objeto de preferência
         $preference = new MercadoPago\Preference();
 
-        // Cria um item na preferência
         $item = new MercadoPago\Item();
-        $item->title = 'Meu produto';
-        $item->quantity = 1;
-        $item->unit_price = 75.56;
-        $preference->items = array($item);
-        $preference->save();
+        $item->id = $product->id;
+        $item->title = $product->product;
+        $item->description = $product->description;
+        $item->quantity = $product->qtd;
+        $item->currency_id = "BRL";
+        $item->unit_price = $product->valor;
+
         $preference->items = array($item);
 
         $preference->back_urls = array(
