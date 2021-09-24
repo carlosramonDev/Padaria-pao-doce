@@ -78,8 +78,10 @@ $acess_token = "TEST-1870176291907586-092120-5de678394e7322f727d489629bb8e315-47
    
 ?>
 
+<div id="search-container" class="col-md-12"></div>
+
 <div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Produtos que estão no carrinho</h1>
+   <h1 >Itens no carrinho:</h1>
 </div>
 <div class="col-md-10 offset-md-1 dashboard-product-container">
 @if(count($productsAsParticipants)>0)
@@ -108,8 +110,8 @@ $acess_token = "TEST-1870176291907586-092120-5de678394e7322f727d489629bb8e315-47
                       <form action="/cadastro/leave/{{$product->id}}" method="POST">
                       @csrf
                       @method("DELETE")
-                      <button type="submit" class="btn btn-danger delete-btn">
-                          Retirar
+                      <button type="submit" id="btncrud" class="btn btn-danger delete-btn">
+                      <ion-icon name="trash-outline"></ion-icon>
                       </button>
                       </form>
                     </td>
@@ -120,7 +122,7 @@ $acess_token = "TEST-1870176291907586-092120-5de678394e7322f727d489629bb8e315-47
     </table>
 
 
-    <a href={{$link}} class="btn btn-secondary" >Pagar</a>
+    <a href={{$link}} id="btnpagamento" class="btn btn-success" >Pagar</a>
 
 @else
 <p>Não existem produtos no carrinho!</p>

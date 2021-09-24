@@ -4,6 +4,8 @@
 
 @section('content')
 
+<div id="search-container" class="col-md-12"></div>
+<h1 style="margin: 30px;">Usuários Cadastrados:</h1>
 <div class="col-md-12 dashboard-product-container">
     <div class="row">
     <div class="col-md-2 text-center">
