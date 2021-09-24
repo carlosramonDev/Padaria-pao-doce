@@ -6,7 +6,7 @@
 body {
     min-height: 100vh;
     /*tela em 100%*/
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     position: relative; ;
 }
 
@@ -25,6 +25,12 @@ body {
 
 #navbar2 img{
     width:50px;
+    margin-left: 35px;
+}
+
+#navbar2 p{
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
 }
 
 .row{
@@ -81,6 +87,17 @@ ion-icon {
 }
 
 /*lista de produtos */
+#products-container h2{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    
+}
+
+#btncomprar{
+    background-color: #FFCA2C;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+}
 
 #products-container{
 
@@ -112,7 +129,32 @@ ion-icon {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+
 }
+
+
+/*dashboard cliente*/
+.containerbtn {
+    margin-top:10px;
+    
+}
+
+#btncrud{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#cliente-submit{
+    font-size: 18px;
+    text-align: center;
+    border-radius:5px;
+    padding: 18px 18px;
+    margin-top: 50px;
+    background-color: #FFCA2C;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+}
+
 
 /* Dashboard */
 .dashboard-title-container {
@@ -196,7 +238,7 @@ footer p{
     font-size: 14px;
 }
 
-/*Pagina de cadastro*/
+/*botoes de cadastro*/
 
 #cadastro2-submit{
     font-size: 18px;
@@ -204,17 +246,20 @@ footer p{
     border-radius:5px;
     padding: 18px 18px;
     margin-top: 50px;
-    background-color: #555448;
+    background-color: #FFCA2C;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 #cadastro-submit{
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     border-radius:5px;
-    padding: 30px 30px;
-    margin-top: 25px;
-    background-color: #555448;
-    width: 40%;
+    padding: 15px 15px;
+    margin-top: 30px;
+    margin: 10px;
+    background-color: #FFCA2C;
+    width: 20%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 /*Page-contato*/
@@ -235,9 +280,131 @@ footer p{
 }
 
 
+/*Page login*/
+.container{
+    background-image: url(../img/imagemback.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
 
 
 .form-group{
-    margin-top: 15px;
+    margin: 40px;
+
+}
+
+.card{
+    border-radius: 25px;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    
+}
+ .container img{
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+ }
+
+ #btn-login {
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+ }
+
+ .form-check p{
+    margin-top: 10px;
+    font-size: 20px;
+ }
+
+ #remember{
+     margin-top: 15px;
+ }
+
+.container h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#floatingInput{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#floatingPassword{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
+/*Register*/
+
+.container2{
+    background-image: url(../img/imagemback.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.container2 img{
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+ }
+ .container2 h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-body{
+    padding-bottom:20px;
+}
+
+.card-body p{
+    font-size:20px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+#name{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#email{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+ 
+#password{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#password-confirm{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#btn-cadastro{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    font-size: 20px;
+
+
 }
 

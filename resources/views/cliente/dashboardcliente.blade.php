@@ -7,7 +7,7 @@
 <div class="col-md-12 dashboard-product-container">
     <div class="row">
     <div class="col-md-2 text-center">
-            <a href="/register"  class="btn btn-secondary" id="cliente-submit">Cadastrar clientes</a>
+            <a href="/register"  class="btn btn-warning" id="cliente-submit">Cadastrar Usuário</a>
         </div>
         <div class="col-md-10">
             @if(count($users)>0)
@@ -31,12 +31,12 @@
                             <td>
                                 
                             
-                            <a href="/cliente/editcliente/{{$user->id}}" class="btn btn-info edit btn">EDITAR</a> 
+                            <a href="/cliente/editcliente/{{$user->id}}"id="btncrud" class="btn btn-success edit btn">EDITAR</a> 
 
                                 <form action="/cliente/{{$user->id}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger delete-btn"> DELETAR</button>
+                                <button type="submit" id="btncrud" class="btn btn-danger delete-btn"> DELETAR</button>
                                 </form>
                             </td> 
                         </tr>

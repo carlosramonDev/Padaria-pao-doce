@@ -7,7 +7,7 @@
 <div class="col-md-12 dashboard-product-container">
     <div class="row">
     <div class="col-md-2 text-center">
-            <a href="/cadastro/cadastroprodutos"  class="btn btn-secondary" id="cadastro2-submit">Cadastrar produtos</a>
+            <a href="/cadastro/cadastroprodutos"  class="btn btn-warning" id="cadastro2-submit">Cadastrar Produto</a>
         </div>
         <div class="col-md-10">
             @if(count($products)>0)
@@ -46,7 +46,7 @@
                 </tbody>
             </table>
             @else
-            <p>Não há produtos cadastrados, <a href="/cadastro/cadastroprodutos">Adicionar produto</a></p>
+            <p style="padding: 75px;">Não há produtos cadastrados: <a href="/cadastro/cadastroprodutos">Adicionar Produto</a></p>
             @endif
         </div>
     </div>

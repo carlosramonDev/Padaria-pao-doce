@@ -58,12 +58,13 @@
                 </div>
             </nav>
             <nav class="navbar navbar-expand-sm navbar-light">
-                <div class="collapse navbar-collapse" id="navbar2">
+                <div class="collapse navbar-collapse col-md-12" id="navbar2">
                     <a href="/" class="navbar-brand">
                         <img src="/img/paoBrand.svg" alt="Padaria pão doce">
+                        <p>PADARIA SONHO BOM</p>
                     </a>
                     <ul>
-                        <div id="search2-container" class="col-md-12">
+                        <div id="search2-container" >
                             <form action="/" method="GET" >
                                 <input type="text" name="search" id="search" class="form-control" placeholder="Procurar...">
                             </form>
@@ -89,7 +90,6 @@
             </div>
         </main>
 
-        {{--  --}}
         <footer>
             <p>Padaria Sonho Bom&copy; 2021 </p>
         </footer>
